@@ -1,49 +1,48 @@
 // 1.
-// function getDataType() {
-//   var result = 42
-//   return console.log(typeof result);
-// }
-// getDataType()
 
-// var getDataType = () => {
-//   var result = 'Hello World'
-//   return console.log(typeof result)
+// function getTypeOfData(number) {
+//   console.log(typeof number);
 // }
-// getDataType()
-
-// var getDataType = () => {
-//   var result = false
-//   return console.log(typeof result)
-// }
-// getDataType()
-
+// getTypeOfData(44)
 
 
 // 2.
-// function sum(a, b) {
-//   return console.log(40 + 2)
+// function calculate(num1, operator, num2) {
+//   var result;
+//   switch (operator) {
+//     case '+':
+//       result = num1 + num2;
+//       console.log(result);
+//       break;
+//     case '-':
+//       result = num1 - num2;
+//       console.log(result);
+//       break;
+//     case '*':
+//       result = num1 * num2;
+//       console.log(result);
+//       break;
+//     case '/':
+//       result = num1 / num2;
+//       console.log(result);
+//       break;
+//     default:
+//       console.log('Некорректный оператор');
+//   }
+//   return result;
 // }
-// sum()
+// calculate(40, '*', 5);
 
-// function sub(a, b) {
-//   return console.log(52 - 12);
-// }
-// sub()
 
-// function multiply(a, b) {
-//   return console.log(23 * 10);
-// }
-// multiply()
-
-// function division(a, b) {
-//   return console.log(30 / 3);
-// }
-// division()
 
 // 3.
-// var array = [-1, 0, 5, 7, 15, 26]
 
-// var result = array.find(function () {
-//   return console.log(array.indexOf(5));
-// })
-// array()
+
+var array = [-1, 0, 5, 7, 15, 26]
+
+function findArr(i, array) {
+  var result = findArr(array, 5)
+  return console.log(findArr.indexOf(i))
+}
+
+findArr(findArr)
